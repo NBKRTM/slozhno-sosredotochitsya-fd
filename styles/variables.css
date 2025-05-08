@@ -4,7 +4,7 @@
 */
 :root {
   --main-font-family: 'IBM Plex Mono', Mono;
-  --main-font-size: 18px;
+  --main-font-size: 1.125rem;
   --main__section__weight: 400;
   --main__section__line-height: 23.4px;
 
@@ -13,4 +13,6 @@
   --text-color: rgba(241, 178, 206, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --decorations-color: rgba(219, 0, 255, 1);
+
+  --section-padding: 10px;
 }
