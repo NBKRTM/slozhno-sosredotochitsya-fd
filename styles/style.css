@@ -277,6 +277,17 @@
   .distractions .main__section__title {
     max-inline-size: 236px;
   }
+
+  .tips {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .tips .main__section__title {
+    grid-column: 1;
+    grid-row: 1 / span 6;
+    font-size: 18px;
+  }
 }
 
 /* Планшет, ландшафт (от 1024px) */
