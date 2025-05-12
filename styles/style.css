@@ -270,8 +270,12 @@
   }
 
   .distractions {
-    grid-template-rows: min-content 1fr 1fr 1fr;
+    grid-template-rows: auto;
     column-gap: 20px;
+  }
+
+  .distractions .main__section__title {
+    max-inline-size: 236px;
   }
 }
 
