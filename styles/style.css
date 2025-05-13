@@ -161,6 +161,11 @@
   margin-top: 10px;
 }
 
+.link {
+  display: inline-block;
+  text-shadow: 2px 2px 0 var(--accent-shadow-color);
+}
+
 .main__section__title {
   font-weight: 700;
   line-height: var( --main__section__line-height);
