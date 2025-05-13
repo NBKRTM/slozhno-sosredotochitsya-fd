@@ -288,56 +288,87 @@
     grid-row: 1 / span 6;
     font-size: 18px;
   }
-}
-
-/* Планшет, ландшафт (от 1024px) */
-@media (min-width: 1024px) {
-  /* Стили для планшета в ландшафтной ориентации */
-}
-/* 
-  .dec-element {
-    right: 20px;
-  }
-  
-  .header {
-    min-block-size: max(560px, 100dvb);
-  }
-
-  .header__title {
-    margin-inline-start: 0;
-  }
-
-  .header__text {
-    justify-self: initial;
-    align-self: center;
-    inline-size: 100%;
-  }
-
-  .main__section-answers {
-    grid-template-columns: 1fr;
-  }
-
-  .section-reasons__title {
-    grid-column: 1 / -1;
-    inline-size: 100%;
-  }
-
-  .main__section-advices {
-    grid-template-columns: 1fr;
-  }
-
-  .main__section-gallery {
-    --section-grid-gap: 10px;
-    grid-template-columns: 1fr;
+  .gallery {
+    /* display: grid; */
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: row;
   }
+
+  .gallery__title {
+    grid-column: 1 / -1;
+    grid-row: 1 / auto;
+  }
+
+  .sunset {
+    grid-column: 1 / 3;
+    grid-row: 2 / auto;
+  }
   
-  .section-gallery__image {
+  .ice-cream {
+    grid-column: 3 / auto;
+    grid-row: 2 / 4;
+  }
+  
+  .tape{
     grid-column: 1 / auto;
-    grid-row: initial;
+    grid-row: 3 / 5;
+  }
+  
+  .books {
+    grid-column: 2 / auto;
+    grid-row: 3 / auto;
+  }
+  
+  .street {
+    grid-column: 2 / 4;
+    grid-row: 4 / auto;
   }
 
   .footer {
-    min-block-size: max(200px, 100dvb);
-  } */
+    height: max(100vh, 768px);
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Стили для планшета в ландшафтной ориентации */
+  .decorations {
+    color: var(--decorations-color);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: flex-start;
+    inline-size: 230px;
+    block-size: 26px;
+    padding-block: 0px;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    color: var(--accent-color);
+  }
+  .reasons {
+    column-gap: 10px;
+  }
+
+  .distractions {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    row-gap: 0px;
+  }
+  
+  .distractions .main__section__title {
+    grid-column: 1 / -1; /* Заголовок на всю ширину */
+    margin-bottom: 20px;
+    max-inline-size: 315px;
+  }
+  .tips {
+    column-gap: 10px;
+  }
 }
