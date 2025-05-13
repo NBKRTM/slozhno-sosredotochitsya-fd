@@ -141,7 +141,7 @@
 .main {
   display: grid;
   background-color: var(--bg-color);
-  flex-grow: 1; 
+  flex-grow: 1;
   padding-block: 40px;
 }
 
@@ -164,8 +164,20 @@
 .link {
   display: inline-block;
   text-shadow: 2px 2px 0 var(--accent-shadow-color);
+  text-decoration: none;
 }
 
+.link:hover {
+  box-shadow: 0 1px 0 0 currentColor;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
 .main__section__title {
   font-weight: 700;
   line-height: var( --main__section__line-height);
@@ -197,10 +209,6 @@
 }
 
 /* footer ----------------------------------------------*/
-.footer-title {
-  text-shadow: 2px 2px 0 var(--accent-color);
-}
-
 .footer {
   position: relative;
   display: grid;
