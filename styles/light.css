@@ -1,39 +1,8 @@
-/*
+/* 
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --accent-color: rgba(53, 52, 48, 1);
-    --accent-bgr-color: rgba(255, 141, 203, 1);
-    --accent-shadow-color: rgba(255, 141, 203, 1);
-    --accent-title-color: rgba(53, 52, 48, 1);
-    --link-hover-color: rgba(50, 49, 45, 0.4);
-    --text-color: rgba(53, 52, 48, 1);
-    /* --main-title-color: rgba(255, 194, 230, 1); */
-    --bg-color: rgba(255, 241, 247, 1);
-    --bground-image-src: url(../images/cover-image-light.png);
-  }
-
-  .header::before, .header::after {
-    --accent-bgr-color: var(--accent-color);
-  }
-  
-  .footer__title {
-    --accent-shadow-color: rgba(255, 0, 112, 1);
-  }
-  
-  .header__rec {
-    display: none;
-  }
-  
-  .footer::before, .footer::after {
-    --accent-bgr-color: var(--accent-color);
-  }
-} 
-
 :root.theme-light {
     /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -45,6 +14,14 @@
   --accent-color: rgba(255, 141, 203, 1);
   --accent-shadow-color: rgba(255, 141, 203, 1);
   --decorations-color: rgba(255, 194, 230, 1);
+
+  --decorations-border-color: rgba(53, 52, 48, 1);
+  --title-decor-background: rgba(255, 141, 203, 1);
+  --title-decor-text-color: rgba(0, 0, 40, 1);
+  --link-hover-color: rgba(50, 49, 45, 0.4);
+  --header-rec-color: rgba(255, 0, 112, 1);
+  --main__section__title: rgba(53, 52, 48, 1);
+  --footer_text-shadow: rgba(255, 0, 112, 1);
 }
 
 .theme-light .title-decor {
@@ -77,6 +54,33 @@
 .theme-light .main__section__title {
   color: var(--text-color);
 }
-.theme-light .footer::before, .footer::after {
-  --accent-bgr-color: var(--accent-color);
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: rgba(255, 241, 247, 1);
+    --bg-image: url(../images/cover-image-light.png);
+    --text-color: rgba(53, 52, 48, 1);
+    --accent-color: rgba(255, 141, 203, 1);
+    --accent-shadow-color: rgba(255, 141, 203, 1);
+    --decorations-color: rgba(255, 194, 230, 1);
+
+    --decorations-border-color: rgba(53, 52, 48, 1);
+    --title-decor-background: rgba(255, 141, 203, 1);
+    --title-decor-text-color: rgba(0, 0, 40, 1);
+    --link-hover-color: rgba(50, 49, 45, 0.4);
+    --header-rec-color: rgba(255, 0, 112, 1);
+    --main__section__title: rgba(53, 52, 48, 1);
+    --footer_text-shadow: rgba(255, 0, 112, 1);
+    --header__theme-menu-list: rgba(0, 0, 40, 1);
+  }
+
+  .header__rec {
+    display: none;
+  }
+
+  /* .header__theme-menu-list {
+    color: rgba(53, 52, 48, 1)
+  } */
 }

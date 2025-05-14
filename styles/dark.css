@@ -16,4 +16,12 @@
   --accent-shadow-color: rgba(255, 0, 112, 1);
   --decorations-color: rgba(219, 0, 255, 1);
 
+  --decorations-border-color: rgba(255, 0, 112, 1);
+  --title-decor-background: rgba(255, 0, 112, 1);
+  --title-decor-text-color: rgba(0, 0, 40, 1);
+  --link-hover-color: rgba(255, 0, 112, 0.4);
+  --header-rec-color: rgba(255, 0, 112, 1);
+  --main__section__title: rgba(255, 0, 112, 1);
+  --footer_text-shadow: rgba(255, 0, 112, 1);
+  --header__theme-menu-list: rgba(255, 0, 112, 1);
 }
