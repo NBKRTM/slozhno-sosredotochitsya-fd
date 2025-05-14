@@ -38,6 +38,7 @@
 
 .theme-light .main__section__title {
   --bg-color: var(--text-color);
+  color: var(--text-color);
 }
 .theme-light .header__rec::after, .header__rec {
   --bg-color: var(--text-color);
@@ -50,12 +51,6 @@
 .theme-light .header__rec {
   display: none;
 }
-
-.theme-light .main__section__title {
-  color: var(--text-color);
-}
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -79,8 +74,4 @@
   .header__rec {
     display: none;
   }
-
-  /* .header__theme-menu-list {
-    color: rgba(53, 52, 48, 1)
-  } */
 }
