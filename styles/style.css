@@ -15,8 +15,6 @@
 .decorations {
   color: var(--decorations-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /* font-weight: 700; */
-  line-height: 83%;
 }
 
 .decorated-zone::before,
@@ -140,7 +138,6 @@
 
 .main {
   display: grid;
-  /* background-color: var(--bg-color); */
   flex-grow: 1;
   padding-block: 40px;
 }
@@ -190,10 +187,12 @@
 .main__section__content:not(:last-child) {
   margin-bottom: 20px;
 }
+.main__section__subtitle__tips {
+  margin-block-end: 20px;
+}
 
 .main__section__content .subtitle {
   font-weight: var(--main__section__weight);
-  margin-block-start: 20px;
 }
 
 .gallery {
@@ -230,17 +229,16 @@
     height: max(100vh, 768px);
     padding: 20px;
   }
-  
-  .decorated-zone::before {
-    top: 20px;
-    right: 20px;
-  }
-  
-  .decorated-zone::after {
-    bottom: 20px;
-    left: 20px;
-  }
 
+  .decorated-zone::before { 
+    top: 20px; 
+    right: 20px; 
+  } 
+   
+  .decorated-zone::after { 
+    bottom: 20px; 
+    left: 20px; 
+  }
   .header-title {
     margin-inline: -20px;
   }
@@ -253,8 +251,16 @@
   .header-text {
     justify-self: end;
     inline-size: 50%;
+    margin-bottom: 25px;
   }
-  
+
+  .header__theme-menu-list {
+    margin-top: 12px;
+  }
+
+  .header__theme-menu {
+    padding-top: 20px;
+  }
   .main {
     padding-block: 60px;
   }
@@ -271,7 +277,6 @@
   .reasons .main__section__title {
     grid-column: 1;
     grid-row: 1 / span 2;
-    font-size: 18px;
   }
 
   .main__section:not(:last-child) {
@@ -348,7 +353,6 @@
 @media (min-width: 1024px) {
   /* Стили для планшета в ландшафтной ориентации */
   .decorations {
-    color: var(--decorations-color);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -364,7 +368,10 @@
     display: flex;
     flex-direction: row;
     gap: 14px;
-    color: var(--header__theme-menu-list);
+    margin-top: 0;
+  }
+  .header-text {
+    margin-bottom: 35px;
   }
   .reasons {
     column-gap: 10px;
