@@ -1,7 +1,3 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   /* Цвета */
   --bg-color: rgba(0, 0, 40, 1);
@@ -10,7 +6,6 @@
   --accent-color: rgba(255, 0, 112, 1);
   --accent-shadow-color: rgba(255, 0, 112, 1);
   --decorations-color: rgba(219, 0, 255, 1);
-
   --decorations-border-color: rgba(255, 0, 112, 1);
   --title-decor-background: rgba(255, 0, 112, 1);
   --title-decor-text-color: rgba(0, 0, 40, 1);
@@ -28,4 +23,7 @@
 
   /* Отступы */
   --section-padding: 10px;
+
+  /* Декоративный элемент */
+  --rec-display: flex;
 }
