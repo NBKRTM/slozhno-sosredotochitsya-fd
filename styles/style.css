@@ -1,7 +1,7 @@
 .page {
   background-image: 
     var(--bg-image, url(../images/cover-image-dark.png));
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 .decorations {
   color: var(--decorations-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 83%;
 }
 
@@ -54,8 +54,8 @@
 .header__theme-menu {
   justify-self: right;
   align-self: center;
-  inline-size: 70px;
-  block-size: 98px;
+  min-inline-size: 70px;
+  min-block-size: 98px;
 }
 
 .header__theme-menu-list {
@@ -65,7 +65,7 @@
   color: var(--header__theme-menu-list);
 }
 
-.header__theme-menu-item button {
+.header__theme-menu-item .header__theme-menu-button {
   background-color: transparent;
   text-transform: lowercase;
   border: none;
@@ -83,6 +83,7 @@
   padding-block-end: 4px;
   line-height: 1;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -90,7 +91,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid currentColor;
+  box-shadow: 0 1px 0 0 currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -111,7 +112,6 @@
   right: 20px;
   color: var(--header-rec-color);
   text-transform: uppercase;
-  /* display: flex; */
   display: var(--rec-display);
   gap: 10px;
 }
@@ -140,7 +140,7 @@
 
 .main {
   display: grid;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   flex-grow: 1;
   padding-block: 40px;
 }
@@ -178,6 +178,7 @@
 .link:focus-visible {
   outline: 1px solid currentColor;
 }
+
 .main__section__title {
   font-weight: 700;
   line-height: var(--main__section__line-height);
@@ -185,11 +186,13 @@
   color: var(--main__section__title);
   margin-bottom: 20px;
 }
+
 .main__section__content:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .main__section__content .subtitle {
+  font-weight: var(--main__section__weight);
   margin-block-start: 20px;
 }
 
@@ -213,14 +216,12 @@
   position: relative;
   display: grid;
   min-height: 100vh;
-  background-color: var(--bg-color);
   min-block-size: 668px;
 }
 
 .footer-title {
   justify-self: center;
   align-self: center;
-  font-weight: 700;
   text-shadow: 2px 2px 0 var(--footer_text-shadow);
 }
 
@@ -296,6 +297,12 @@
     grid-row: 1 / span 6;
     font-size: 18px;
   }
+
+  .reasons .main__section__content,
+  .tips .main__section__content {
+    grid-column: 2;
+  }
+  
   .gallery {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
