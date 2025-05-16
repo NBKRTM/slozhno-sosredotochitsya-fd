@@ -1,5 +1,5 @@
 :root.theme-dark {
-  /* --bg-color: rgba(0, 0, 40, 1); */
+  --bg-color: rgba(0, 0, 40, 1);
   --bg-image: url(../images/cover-image-dark.png);
   --text-color: rgba(241, 178, 206, 1);
   --accent-color: rgba(255, 0, 112, 1);
@@ -10,7 +10,7 @@
   --title-decor-text-color: rgba(0, 0, 40, 1);
   --link-hover-color: rgba(255, 0, 112, 0.4);
   --header-rec-color: rgba(255, 0, 112, 1);
-  --main__section__title: rgba(255, 0, 112, 1);
+  --main-section-color-title: rgba(255, 0, 112, 1);
   --footer_text-shadow: rgba(255, 0, 112, 1);
   --header__theme-menu-list: rgba(255, 0, 112, 1);
   --rec-display: flex;

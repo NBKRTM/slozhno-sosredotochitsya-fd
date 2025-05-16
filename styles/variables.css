@@ -1,7 +1,7 @@
 :root {
   /* Цвета */
-  --bg-image: url(../images/cover-image-dark.png);
   --bg-color: rgba(0, 0, 40, 1);
+  --bg-image: url(../images/cover-image-dark.png);
   --text-color: rgba(241, 178, 206, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --accent-shadow-color: rgba(255, 0, 112, 1);
@@ -11,7 +11,7 @@
   --title-decor-text-color: rgba(0, 0, 40, 1);
   --link-hover-color: rgba(255, 0, 112, 0.4);
   --header-rec-color: rgba(255, 0, 112, 1);
-  --main__section__title: rgba(255, 0, 112, 1);
+  --main-section-color-title: rgba(255, 0, 112, 1);
   --footer_text-shadow: rgba(255, 0, 112, 1);
   --header__theme-menu-list: rgba(255, 0, 112, 1);
 
@@ -20,6 +20,8 @@
   --main-font-size: 1.125rem;
   --main__section__weight: 400;
   --main__section__line-height: 23.4px;
+  --line-height-tight: 83%;
+  --bold-font-weight: 700;
 
   /* Отступы */
   --section-padding: 10px;
