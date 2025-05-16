@@ -15,6 +15,8 @@
 .decorations {
   color: var(--decorations-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
 }
 
 .decorated-zone::before,
@@ -63,7 +65,7 @@
   color: var(--header__theme-menu-list);
 }
 
-.header__theme-menu-item .header__theme-menu-button {
+.header__theme-menu-item button {
   background-color: transparent;
   text-transform: lowercase;
   border: none;
@@ -132,6 +134,8 @@
 
 .header-title {
   text-shadow: 4px 4px 0 var(--accent-color);
+  max-inline-size: 100%;
+  width: fit-content;
 }
 
 /* main ----------------------------------------------*/
@@ -251,16 +255,8 @@
   .header-text {
     justify-self: end;
     inline-size: 50%;
-    margin-bottom: 25px;
   }
 
-  .header__theme-menu-list {
-    margin-top: 12px;
-  }
-
-  .header__theme-menu {
-    padding-top: 20px;
-  }
   .main {
     padding-block: 60px;
   }
@@ -354,6 +350,8 @@
   /* Стили для планшета в ландшафтной ориентации */
   .decorations {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    /* line-height: 83%;
+    font-weight: 700;  */
   }
 
   .header__theme-menu {
@@ -370,9 +368,7 @@
     gap: 14px;
     margin-top: 0;
   }
-  .header-text {
-    margin-bottom: 35px;
-  }
+
   .reasons {
     column-gap: 10px;
   }
