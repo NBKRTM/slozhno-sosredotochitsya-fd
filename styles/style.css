@@ -236,14 +236,15 @@
   }
 
   .decorated-zone::before { 
-    top: 20px; 
-    right: 20px; 
-  } 
+    top: 20px;
+    right: 20px;
+  }
    
   .decorated-zone::after { 
     bottom: 20px; 
-    left: 20px; 
+    left: 20px;
   }
+
   .header-title {
     margin-inline: -20px;
   }
