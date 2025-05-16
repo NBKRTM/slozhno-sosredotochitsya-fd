@@ -1,6 +1,7 @@
 :root {
   /* Цвета */
   --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: rgba(0, 0, 40, 1);
   --text-color: rgba(241, 178, 206, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --accent-shadow-color: rgba(255, 0, 112, 1);

@@ -1,6 +1,7 @@
 .page {
   background-image: 
     var(--bg-image, url(../images/cover-image-dark.png));
+  background-color: var(--bg-color);
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
