@@ -12,14 +12,14 @@
   --link-hover-color: rgba(255, 0, 112, 0.4);
   --header-rec-color: rgba(255, 0, 112, 1);
   --main-section-color-title: rgba(255, 0, 112, 1);
-  --footer_text-shadow: rgba(255, 0, 112, 1);
-  --header__theme-menu-list: rgba(255, 0, 112, 1);
+  --footer-text-shadow: rgba(255, 0, 112, 1);
+  --header-theme-menu-list: rgba(255, 0, 112, 1);
 
   /* Шрифт и размеры */
   --main-font-family: 'IBM Plex Mono', Mono;
   --main-font-size: 1.125rem;
-  --main__section__weight: 400;
-  --main__section__line-height: 23.4px;
+  --main-section-weight: 400;
+  --main-section-line-height: 23.4px;
   --line-height-tight: 83%;
   --bold-font-weight: 700;
 

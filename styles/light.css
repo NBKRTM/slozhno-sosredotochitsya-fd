@@ -9,8 +9,8 @@
     --decorations-border-color: rgba(53, 52, 48, 1);
     --title-decor-background: rgba(255, 141, 203, 1);
     --link-hover-color: rgba(50, 49, 45, 0.4);
-    --main__section__title: rgba(53, 52, 48, 1);
-    --header__theme-menu-list: rgba(53, 52, 48, 1);
+    --main-section-color-title: rgba(53, 52, 48, 1);
+    --header-theme-menu-list: rgba(53, 52, 48, 1);
     --rec-display: none;
   }
 }
@@ -25,7 +25,7 @@
   --decorations-border-color: rgba(53, 52, 48, 1);
   --title-decor-background: rgba(255, 141, 203, 1);
   --link-hover-color: rgba(50, 49, 45, 0.4);
-  --main__section__title: rgba(53, 52, 48, 1);
-  --header__theme-menu-list: rgba(53, 52, 48, 1);
+  --main-section-color-title: rgba(53, 52, 48, 1);
+  --header-theme-menu-list: rgba(53, 52, 48, 1);
   --rec-display: none;
 }

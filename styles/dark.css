@@ -11,8 +11,8 @@
   --link-hover-color: rgba(255, 0, 112, 0.4);
   --header-rec-color: rgba(255, 0, 112, 1);
   --main-section-color-title: rgba(255, 0, 112, 1);
-  --footer_text-shadow: rgba(255, 0, 112, 1);
-  --header__theme-menu-list: rgba(255, 0, 112, 1);
+  --footer-text-shadow: rgba(255, 0, 112, 1);
+  --header-theme-menu-list: rgba(255, 0, 112, 1);
   --rec-display: flex;
 }
 
